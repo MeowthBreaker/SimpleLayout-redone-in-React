@@ -1,5 +1,5 @@
 import './Header.css';
-import {cn} from '../lib/cn';
+import {cn} from '../../lib/cn';
 import { Burger } from './Burger/Burger';
 import { useState, useCallback } from 'react';
 import {ReactComponent as SearchImg} from './img/search.inline.svg'

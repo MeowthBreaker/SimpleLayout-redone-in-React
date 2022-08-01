@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 import './Burger.css';
-import {cn} from '../../lib/cn';
+import {cn} from '../../../lib/cn';
 
 
 const cls = cn('burger');
