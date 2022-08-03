@@ -3,7 +3,7 @@ import {MainScreen} from './components/MainScreen/MainScreen';
 import {About} from './components/About/About';
 import {BackToTop} from './components/BackToTop/BackToTop';
 import { Services } from './components/Services/Services';
-
+import { LatestWorks } from './components/LatestWorks/LatestWorks';
 export function App() {
   return (
     <>
@@ -12,6 +12,7 @@ export function App() {
       <MainScreen />
       <About />
       <Services />
+      <LatestWorks />
     </>
   );
 }
