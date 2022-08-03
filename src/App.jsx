@@ -4,6 +4,8 @@ import {About} from './components/About/About';
 import {BackToTop} from './components/BackToTop/BackToTop';
 import { Services } from './components/Services/Services';
 import { LatestWorks } from './components/LatestWorks/LatestWorks';
+import {PricingPlan} from './components/PricingPlan/PricingPlan';
+
 export function App() {
   return (
     <>
@@ -13,6 +15,7 @@ export function App() {
       <About />
       <Services />
       <LatestWorks />
+      <PricingPlan />
     </>
   );
 }
