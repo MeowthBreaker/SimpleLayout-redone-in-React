@@ -1,0 +1,30 @@
+.slider__button {
+  background-color: var(--color-green);
+
+  border-radius: 50%;
+
+  width: 12px;
+  height: 12px;
+}
+
+.slider-buttons {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 50px;
+}
+
+.slider__button:hover {
+  background-color: var(--color-dark-blue);
+  opacity: 0.5;
+}
+
+.slider-buttons .slider__button:not(:last-child) {
+  margin-right: 5px;
+}
+
+.slider__button_active {
+  background-color: var(--color-dark-blue);
+}

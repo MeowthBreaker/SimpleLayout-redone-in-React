@@ -1,0 +1,11 @@
+.slider__container {
+  transition: all linear 0.2s;
+  min-width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.slider__item {
+  width: 100%;
+  min-width: 100%;
+}

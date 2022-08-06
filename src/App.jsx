@@ -5,6 +5,7 @@ import {BackToTop} from './components/BackToTop/BackToTop';
 import { Services } from './components/Services/Services';
 import { LatestWorks } from './components/LatestWorks/LatestWorks';
 import {PricingPlan} from './components/PricingPlan/PricingPlan';
+import { Team } from './components/Team/Team';
 
 export function App() {
   return (
@@ -16,6 +17,7 @@ export function App() {
       <Services />
       <LatestWorks />
       <PricingPlan />
+      <Team />
     </>
   );
 }

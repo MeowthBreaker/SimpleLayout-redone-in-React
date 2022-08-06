@@ -1,0 +1,22 @@
+.slider-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-column-gap: 20px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width:1100px) {
+  .slider-cards {
+      grid-gap: 0px;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .slider-cards {
+      display: flex;
+      flex-direction: column;
+  }
+}

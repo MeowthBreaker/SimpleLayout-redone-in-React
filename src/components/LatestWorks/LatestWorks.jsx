@@ -60,7 +60,9 @@ incididunt ut labore et dolore magna aliqua, Ut enim ad minim veniam'/>
         <Button theme='transparent-green'>READ MORE</Button>
       </div>
       <div className={cls('cards')}>
-        {data.map(({...props}, idx) => (<LatestWorksCard key={idx} {...props}/>))}
+        {data.map(
+          ({...props}, idx) => (<LatestWorksCard key={idx} {...props}/>)
+        )}
       </div>
     </div>
   );
