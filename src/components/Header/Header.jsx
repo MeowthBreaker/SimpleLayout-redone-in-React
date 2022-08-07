@@ -1,13 +1,17 @@
 import './Header.css';
 import {cn} from '../../lib/cn';
 import { Burger } from './Burger/Burger';
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useMemo } from 'react';
 import {ReactComponent as SearchImg} from './img/search.inline.svg'
-
+import {Link} from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+import { Services } from '../Services/Services';
 
 const cls = cn('header');
 
+
 export const Header = () => {
+  const navItems = useMemo(() => ['Home', 'About', 'Servicing', 'Portfolio', 'Blog', 'Contact'], []);
 
   const [active, setActive] = useState(false);
 
@@ -17,6 +21,12 @@ export const Header = () => {
     [active]
   );
 
+  const scrollWithOffset = (el) => {
+    const yOffset = (window.innerWidth < 1250) ? 0 : -120;
+
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+  }
 
   return (
     <>
@@ -25,12 +35,16 @@ export const Header = () => {
         <img className={cls('logo')} alt="Your logo"/>
         <nav className={cls('nav')}>
           <ul className={cls('list')}>
-            <li className={cls('list-item')}>Home</li>
-            <li className={cls('list-item')}>About</li>
-            <li className={cls('list-item')}>Servicing</li>
-            <li className={cls('list-item')}>Portfolio</li>
-            <li className={cls('list-item')}>Blog</li>
-            <li className={cls('list-item')}>Contact us</li>
+            {navItems.map((item) => (
+              <HashLink
+                to={`/#${item}`}
+                smooth
+                scroll={el => scrollWithOffset(el)}
+                className={cls('list-item')}
+              >
+                {item}
+              </HashLink>
+            ))}
           </ul>
         </nav>
 

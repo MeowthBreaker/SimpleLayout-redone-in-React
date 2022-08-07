@@ -44,7 +44,7 @@ const data = [
 
 export const Services = () => {
   return (
-    <div className={cls()}>
+    <div className={cls()} id='Servicing'>
       <Title
         title="Our services"
         description='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor

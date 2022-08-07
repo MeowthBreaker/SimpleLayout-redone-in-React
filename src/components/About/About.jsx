@@ -31,7 +31,7 @@ const data = [
 
 export const About = () => {
   return (
-    <div className={cls()}>
+    <div className={cls()} id='About'>
       <Title title="About us" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
       incididunt ut labore et dolore magna aliqua, Ut enim ad minim veniam"/>
 

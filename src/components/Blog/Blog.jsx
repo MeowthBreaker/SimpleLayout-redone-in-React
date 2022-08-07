@@ -39,7 +39,7 @@ const cls = cn('blog');
 
 export const Blog = () => {
   return (
-    <div className={cls()}>
+    <div className={cls()} id='Blog'>
       <Title title='Blog' description='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, Ut enim ad minim veniam' />
       <div className={cls('ceo')}>
         {

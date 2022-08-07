@@ -50,7 +50,7 @@ const cls = cn('latest-works');
 
 export const LatestWorks = () => {
   return (
-    <div className={cls()}>
+    <div className={cls()} id='Portfolio'>
       <Title title='Latest Works' description='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua, Ut enim ad minim veniam'/>
       <div className={cls('buttons')}>

@@ -20,7 +20,7 @@ export const MainScreen = () => {
   []);
 
   return(
-    <div className={cls()}>
+    <div className={cls()} id='Home'>
       <Text centered className={cls('text')}>
         <Text className={cls('title')}>
           Web development project

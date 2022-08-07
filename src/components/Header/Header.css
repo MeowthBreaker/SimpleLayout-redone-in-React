@@ -42,11 +42,13 @@
   transition: 0.2s linear all;
   cursor: pointer;
   height: 100%;
+  text-decoration: none;
+  color: var(--color-black);
 }
 
 .header__list-item:hover {
   background-color: black;
-  color: white;
+  color: var(--color-white);
 }
 
 .header__search {

@@ -7,6 +7,8 @@ import { LatestWorks } from './components/LatestWorks/LatestWorks';
 import {PricingPlan} from './components/PricingPlan/PricingPlan';
 import { Team } from './components/Team/Team';
 import { Blog } from './components/Blog/Blog';
+import { Contact } from './components/Contact/Contact';
+import { Footer } from './components/Footer/Footer';
 
 export function App() {
   return (
@@ -20,6 +22,8 @@ export function App() {
       <PricingPlan />
       <Team />
       <Blog />
+      <Contact />
+      <Footer />
     </>
   );
 }
