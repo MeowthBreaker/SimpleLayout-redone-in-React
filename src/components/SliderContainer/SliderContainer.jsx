@@ -10,10 +10,14 @@ export const SliderContainer = ({images, groupAmount}) => {
   const buttons = [...document.body.querySelectorAll('.slider__button')];
 
   const getXCoords = (e) => {
+    if(e.button !== 0) return;
+
     setXCoord(e.clientX);
   };
 
   const moveSlide = (e) => {
+    if(e.button !== 0) return;
+
     const index = Number(document.querySelector('.slider__button_active').getAttribute('index'));
 
     if(xCoord - e.clientX < -50) {

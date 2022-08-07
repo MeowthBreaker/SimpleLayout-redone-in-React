@@ -6,6 +6,7 @@ import { Services } from './components/Services/Services';
 import { LatestWorks } from './components/LatestWorks/LatestWorks';
 import {PricingPlan} from './components/PricingPlan/PricingPlan';
 import { Team } from './components/Team/Team';
+import { Blog } from './components/Blog/Blog';
 
 export function App() {
   return (
@@ -18,6 +19,7 @@ export function App() {
       <LatestWorks />
       <PricingPlan />
       <Team />
+      <Blog />
     </>
   );
 }
