@@ -28,8 +28,8 @@ export const SliderButtons = ({buttonsCount}) => {
         .fill(0)
         .map((item, i) => {
           if(i === 0)
-            return (<div className='slider__button slider__button_active' onClick={() => setButtonActive(i)}></div>)
-          return (<div className='slider__button' onClick={() => setButtonActive(i)}></div>);
+            return (<div index={i} className='slider__button slider__button_active' onClick={() => setButtonActive(i)}></div>)
+          return (<div index={i} className='slider__button' onClick={() => setButtonActive(i)}></div>);
         })}
     </div>
   );
